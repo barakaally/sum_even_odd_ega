@@ -37,7 +37,7 @@ public class Sum {
 			reader.close();
 
 			/*
-			 * Now builder has string data Corresponding to data found inside file The data
+			 * Now builder has string data Corresponding to data found inside file ,The data
 			 * inside file are separated by new line(\n),use this trick to create
 			 * corresponding arrays
 			 */
@@ -55,19 +55,19 @@ public class Sum {
 			for (String numString : arrayOfNumStrings) {
 
 				/*
-				 * remember you have string and not numbers string to number Conversation needed
+				 * remember you have string and not numbers, string to number Conversion needed
 				 * here count digit number in provided file in order to know which conversion
-				 * type will work if you see up to 10 digits Integer.parseInt() will work fine
-				 * if you see up to 19 digits Long.parseLong() will work fine if you see 20 or
+				 * type will work if you see up to 10 digits, Integer.parseInt() will work fine
+				 * if you see up to 19 digits, Long.parseLong() will work fine if you see 20 or
 				 * above 20 digit parseInt and parseLong will not work for you for digit>=20
 				 * ,convert them to BigInterger because they are BigInt,
 				 * 
 				 * 
-				 * if digits>0 and digits<=10 int num=Integer.parseInt(numString.trim());
+				 * if digits>0 and digits<=10, int num=Integer.parseInt(numString.trim());
 				 * 
-				 * if digits>=11 and digits<=19 long num=Long.parseLong(numString.trim());
+				 * if digits>=11 and digits<=19, long num=Long.parseLong(numString.trim());
 				 * 
-				 * if digits>=20 BigInteger num=new BigInteger(numString.trim())
+				 * if digits>=20, BigInteger num=new BigInteger(numString.trim())
 				 */
 
 				long num = Long.parseLong(numString.trim());
